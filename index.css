@@ -1,23 +1,81 @@
-
-
-.boxi{
-    margin-top: 20%;
-    
-    width: 500px;
-    height: 300px;
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    
+.display-4 { 
+    text-align: center;
+    font-size: 30px;
+    color:black;
 }
-
-.boxel{
-    padding-bottom: 5%;
-    margin: 2%;
-    width: 500px;
-    height: 30px;
+.rightCorner{
+    font-weight: bolder;
+}
+#quiz-container{
     border: 1px solid black;
-    display: flex;
-    flex-wrap: wrap;
+    background: white;
+    color: black;
     
+    justify-content: center;
+   
+}
+a{
+    color: black;
+}
+#btn-start {
+    display: flex;
+    justify-content: center;
+}
+.jumbotron { 
+    margin-top: 20px;
+    max-width: 650px;
+    background-color: white;
+    border: 2px solid black;
+}
+.timer {
+    text-align: end;
+}
+.highscores {
+    text-align: left;
+    font-size: small;
+}
+.btnClick {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background:white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+#right-or-wrong {
+    text-align: center;
+    color:black;
+    font-size: medium;
+    font-weight: bold;
+}
+#highheader {
+    text-align: center;
+}
+#displayedScores {
+    text-align: center;
+}
+#highscore-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+}
+#go-back {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+#clear-highscore {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: white;
+    color:black;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 5px;
 }

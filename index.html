@@ -7,19 +7,94 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Code Quiz</title>
 </head>
-<body style="background-color: blueviolet;margin: auto;display: flex;flex-wrap: wrap;align-content: center;">
+<body style="background-color: rgba(132, 0, 255, 0.431);">
 
-    <div class="container">
 
-        <div id="box" class="boxi container">
-            
-            <div id="boxelo" class="boxel container">
-                <p>kgkgk</p> 
-             </div>
+    <nav class="navbar navbar-expand-sm">
+        <div class="col-sm-2">
+         <a class="navbar-brand" id="highscores" style="color: black;" href="#">Highscores:</a>
          </div>
-    </div>
+         <div class="col-sm-7"></div>
+         <div class="col-ms-1">
+         <p id="rightCorner" style="font-weight: bold;">Time:</p>
+         </div>
+         <div class="col-sm-1">
+          <p id="timer"></p>
+         </div>
+       </nav>
+ 
+ <div class="container" id="starting-page">
+     <div class="row">
+       <div class="col-sm-2">
+         
+       </div>
+       <div class="col-sm-8 starting-page">
+         <div class="jumbotron">
+             <h1 class="display-4" style="font-size: larger;">Welcome to code-quiz. there are five question that you need to answer in 75 second. you just need to pres the start buttom to start the quiz, then you will be scoredd by yor knowledge, also you can save your initinal and your score to have a vision of what did you do last time.</h1>
 
+             <hr class="my-4">
 
-    <script src="index.js"></script>
+             <a class="btn btn-primary" id="btn-start" href="#" role="button">START</a>
+           </div>
+       </div>
+       <div class="col-sm-2">
+       </div>
+     </div>
+   </div>
+ 
+   <div class="container d-none" id="quiz-container">
+     <h2 id="questiontitle"> </h2>
+     <h1 id="right-or-wrong"></h1>
+     <button id="btn-0" class="btnClick"></button>
+     <button id="btn-1" class="btnClick"></button>
+     <button id="btn-2" class="btnClick"></button>
+     <button id="btn-3" class="btnClick"></button>
+   </div>
+ 
+   <div class="container d-none" id="final-container">
+     <div class="row">
+         <div class="col-12 text-center">
+             <!-- <form> -->
+                 <div class="form-group row">
+                     <!-- <label for="final-score" class="col-sm-7 col-form-label">Final Score</label> -->
+                     <div class="col-sm-5">
+                         <p id="quizScore"> </p>
+                     </div>
+                 </div>
+             <!-- </form> -->
+             <form>
+                 <div class="form-group">
+                   <label for="initials-entry">INITIALS</label>
+                   <input id="initials" type="text" class="form-control initials-entry" placeholder="Enter initials">
+                 </div>
+                 <button id="initial-submit" type="button" class="btn btn-primary submit-initials">Submit</button>
+             </form>
+         </div>
+     </div>
+ </div>
+ <div class="container d-none" id="highscore-container">
+     <div class="row">
+         <div class="col-md-12">
+                     <h1 id="highheader">Highscores:</h1>
+                 </div>
+                     <br>
+                     <div class="col-md-12">
+                     <ol id="displayedScores"> </ol>
+                     </div>
+                 
+                     <br>
+                     <div class="col-md-12">
+         <button id="go-back">Go Back To Start</button>
+         <button id="clear-highscore" value="reset">Clear Highscores</button>
+                         </div>
+         <br>
+     </div>
+ </div>
+ 
+ 
+     <script src="index.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
