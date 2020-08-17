@@ -36,7 +36,7 @@ function endGame() {
     } else {
         console.log(currentQuestion)
     }
-
+}
 
 
 function generateQuestion() {
@@ -104,7 +104,7 @@ function quizTimer() {
       if(secondsLeft === 0 || currentQuestion > 4) {
         clearInterval(timerInterval);
         timer.setAttribute("class","timer d-none");
-    
+
       }
   
     }, 750);
@@ -178,3 +178,4 @@ highscore.addEventListener("click", function(){
 
   generateQuestion();
   endGame();
+  init();
